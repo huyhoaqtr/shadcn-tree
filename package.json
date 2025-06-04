@@ -1,6 +1,6 @@
 {
   "name": "@huyhoaqtr/shadcn-tree",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
@@ -15,7 +15,8 @@
     "dist"
   ],
   "scripts": {
-    "build": "tsup src/index.ts --dts"
+    "build": "tsup src/index.ts --dts",
+    "release": "npm run build && npm version patch && git push --follow-tags && npm publish --access public"
   },
   "peerDependencies": {
     "@radix-ui/react-accordion": "^1.2.11",
