@@ -62,6 +62,7 @@ export default function DemoTree() {
   return (
     <Tree
       data={data}
+      className="flex-shrink-0 w-[200px] h-[460px] border-[1px]"
       initialSelectedItemId="file-1"
       onSelectChange={(item) => console.log("Selected:", item)}
     />
